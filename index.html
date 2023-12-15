@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hello! I am Javascript Backend Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="copyright" content="Mauricio Romão 2023" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="description" content="My name is Mauricio Romão, Javascript Back-End Developer">
+    <link rel="shortcut icon" href="assets/img/logo/teste.png" type="image/x-icon">
+    <!-- imports boxicons-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- imports roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--- css link-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-free-6.4.0-web/css/all.min.css">
+    <title>Maurício Romão</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="top_content apresentation_front">
+            <div class="port_logo">
+                <a href="index.html"><img src="assets/img/logo/teste.png" alt="Mauricio Romao _logo"> </a>
+            </div>
+            <div class="hello_say"><a href="#">Hello, Visitor</a></div>
+        </div>
+
+        <div class="about_me_content">
+            <h1>Javascript, Backend Developer</h1>
+            <br>
+            <p>
+                " Different methods, same outcomes "
+            </p>
+            <div class="social_icones">
+                <nav>
+
+                    <li><a href="https://github.com/MauricioRomao" target="_blank"><i class="bx bxl-twitter"></i></a>
+                    </li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+244958953206&text=Hello, more information!"
+                            target="_blank"><i class="bx bxl-whatsapp"></i></a></li>
+                    <li><a href="mailto:devmauroromao@gmail.com" target="_blank"><i class="bx bxl-gmail"></i></a></li>
+
+                </nav>
+
+            </div>
+        </div>
+        <div class="cv">
+            <div class="cv_download">
+                <a download="Maurício Romão CV" href="assets/pdf/newpdf.pdf"> Download CV</a>
+            </div>
+        </div>
+        <div class="me_picture">
+            <img src="assets/img/me/Mauricio Romão.jpg" alt="Mauricio Romão">
+        </div>
+
+        <div class="devices_img">
+            <img src="assets/img/more/hero-devices.svg" alt="Devices">
+        </div>
+    </header>
+    <main class="main">
+        <div class="discurse">
+            <h1>Hi, i am Mauricio. Nice to meet you.</h1>
+
+            <div class="discurse_p">
+
+                <p>
+
+                    I started my journey with an interest in hacking, after a while I started studying
+                    programming seriously (Linux as a development environment), thus studying
+                    DBMS and web. And I fell in love with Javascript and decided to study it in depth, the Front and
+                    Back-End.
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+        <div class="langues_tech">
+            <!-- Start front estruture-->
+            <div class="estruture">
+                <div class="icone_stech"><i class="bx bx-code"></i></div>
+                <div class="stech_area">
+                    <h3>Front-End developer</h3>
+                </div>
+
+                <div class="languages">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>JavaScript</p>
+                    <p>TypeScript</p>
+                    <p>ReactJS</p>
+                    <p>Sass</p>
+                    <p>Jquery</p>
+
+                </div>
+                <div class="lang_seemore" onclick="activeFrontModal()">
+                    <div class="lang_seemore_text">
+                        <p>See more</p>
+                    </div><i class="bx  bx-right-arrow-alt"></i>
+                </div>
+            </div>
+            <!-- Start database estruture-->
+            <div class="estruture">
+                <div class="icone_stech"><i class="bx bx-data"></i></div>
+                <div class="stech_area">
+                    <h3>Database </h3>
+                </div>
+                <div class="experience">
+                    <p></p>
+
+                </div>
+                <div class="languages db">
+                    <p>MySql</p>
+                    <p>PostgreSql</p>
+                    <p>MongoDB</p>
+
+                </div>
+            </div>
+            <!-- Start backend estruture-->
+            <div class="estruture">
+                <div class="icone_stech"><i class="bx bx-code"></i></div>
+                <div class="stech_area">
+                    <h3>Back-End developer</h3>
+                </div>
+
+                <div class="languages">
+                    <p>Node</p>
+                    <p>Electron</p>
+                    <p>php (basic)</p>
+                    <p>python (basic)</p>
+                    <p>Git</p>
+                    <p>Docker</p>
+
+                </div>
+                <div class="lang_seemore backend_arrow" onclick="activeBackModal()">
+                    <div class="lang_seemore_text">
+                        <p>See more</p>
+                    </div><i class="bx  bx-right-arrow-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+        <div class="comenter">
+            <h3>My recents works</h3>
+            <p>here are some of my projects</p>
+        </div>
+        <section id="product">
+            <div class="container">
+                <div class="controls">
+                    <button type="button" class="control" data-filter="all">ALL</button>
+                    <button type="button" class="control" data-filter=".air-force">
+                Back-End
+              </button>
+                    <button type="button" class="control" data-filter=".pegasus">
+               Front-End
+              </button>
+                    <button type="button" class="control" data-filter=".tempo">
+                UI/UX
+              </button>
+                </div>
+                <div class="products">
+                    <div class="all_products">
+
+                        <div class="mix air-force">
+                            <img src="assets/img/more/angoStar.png" alt="Shoe" />
+                        </div>
+                        <div class="mix pegasus">
+                            <img src="assets/img/more/angoStar.png" alt="Shoe" />
+                        </div>
+                        
+                        <div class="mix pegasus">
+                            <img src="assets/img/more/angoStar.png" alt="Shoe" />
+                        </div>
+                        <div class="mix tempo">
+                            <img src="assets/img/more/angoStar.png" alt="Shoe" />
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+       
+        <div class="share_link">
+            <div class="border_share_link">
+
+                <a href="https://github.com/MauricioRomao" target="_blank">github projects </a>
+                <br>
+                <i class="bx  bx-right-arrow-alt"></i>
+            </div>
+        </div>
+
+        <article class="startup">
+            <div class="discurse ">
+                <h1 class="violet">My startup projects</h1>
+                <br>
+                <p class="violet">I intend to help as many people as possible to gain IT knowledge with this resource.
+                    <br>
+                </p>
+            </div>
+            <div class="estruture_startup">
+                <div class="Ango_star">
+                    <img src="assets/img/more/angoStar.png" alt="Ango_star image">
+                    <i class="bx bx-star">Ango_Star</i>
+                    <div class="visit_site"><a href="https://mauricioromao.github.io/Ango_star/" target="_blank">Visit
+                            website</a></div>
+                    <br>
+                    <br>
+                    <!---- <a href="https://mauricioromao.github.io/Ango_star/" target="_blank"><i class="bx bx-share"></i></a> -->
+                    <br>
+
+                </div>
+
+            </div>
+        </article>
+
+        <div class="comenter this_top">
+            <h3>Testimonial</h3>
+
+        </div>
+
+        <section class="testemonial">
+            <div class="first_person">
+                <img src="assets/img/more/person 2.png" alt="">
+                <p class="name">Josue Firmino</p>
+                <h4 class="words">
+                    I worked with him on just one project and I saw that he is focused, responsible and mainly
+                    self-taught and your
+                    brilliant mind
+                </h4>
+            </div>
+
+            <div class="second_person">
+                <img src="assets/img/more/person 2.png" alt="">
+                <p class="name">Anastacio Paulino</p>
+                <h4 class="words">
+                    Mauricio é bla bla bla bl
+                </h4>
+            </div>
+        </section>
+    </main>
+
+    <div class="modalservices">
+        <div class=" modalforfront">
+            <div class="containerServices">
+                <div class="close closefront"> <i class="bx bx-x services__modal-close"></i></div>
+                <div class="ps">
+                    <p> bla blaba aaaaaa</p>
+                    <p> bla blaba aaaaaa</p>
+                    <p> bla blaba aaaaaa</p>
+                    <p> bla blaba aaaaaa</p>
+                    <p> bla blaba aaaaaa</p>
+                </div>
+            </div>
+        </div>
+
+        <!------------- end-->
+        <div class="modalforback">
+
+            <div class="containerServices">
+                <div class="close closeback"> <i class="bx bx-x services__modal-close"></i></div>
+                <div class="ps">
+                    <p> Version control</p>
+                    <p> Git Hub</p>
+                    <p> SEO</p>
+                    <p> Layout interfaces</p>
+                    <p> UI/Design</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!--   bugggg-->
+
+
+    <footer>
+
+    </footer>
+    <!--- Js link-->
+    <script src="assets/js/main.js" defer></script>
+    <!-- JAVASCRIPR  MIXTUP LIB-->
+    <script src="assets/js/mixitup.min.js"></script>
+    <script>
+
+        var products = document.querySelector('.products');
+        var mixer = mixitup(products);
+    </script>
+</body>
+
+</html>
