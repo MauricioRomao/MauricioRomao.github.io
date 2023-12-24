@@ -1,0 +1,297 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+/* min general config*/
+html,
+body {
+    font-family: sans-serif;
+    background-color: white;
+    transition: 1s background ease-in-out;
+    color: var(--color_principal);
+}
+
+/* Vars*/
+:root {
+    --second_color: rgb(81, 228, 179);
+    --color_principal: rgb(46, 7, 119);
+    --principal_font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* mixitup vars*/
+    --container: 144rem;
+    --m-auto: 0 auto;
+    --white: #fff;
+    --btn: rgb(102, 65, 224);
+    --btn-active: rgb(67, 37, 168);
+}
+
+/* scroll cofig*/
+
+::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: blueviolet;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* start header confgi */
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .header_logo a {
+    height: 70px;
+    margin-left: 10px;
+    padding: 10px;
+    color: rgba(66, 23, 223, 0.973);
+    font-size: 1.3em;
+    font-family: 'roboto';
+    display: flex;
+    align-items: center;
+}
+
+.header_logo i {
+    font-size: 1em;
+    transform: translateY(0.2em);
+
+}
+
+.background_dark {
+    background-color: rgb(13, 21, 49);
+    color: white !important;
+}
+
+
+
+.modal_ i{
+
+    margin-right: 30px;
+    font-size: 2rem;
+    color: rgb(133, 15, 243);
+  
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.9);
+  
+}
+
+.dialog {
+    margin: auto auto;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.header_dialog {
+    width: 100%;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.dialog form .formone {
+    
+    margin-top: 0.8rem;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dialog form input,
+.dialog form textarea {
+    font-family: var(--principal_font);
+    margin-bottom: 1rem;
+    outline: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-left: 1rem;
+    border: 1px solid var(--second_color);
+
+
+}
+.dialog form button{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: var(--second_color);
+    border: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    font-family: 'roboto';
+}
+.dialog_cancel{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+}
+.dialog_cancel p {
+    background-color: blueviolet;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+/* article config*/
+
+.dev_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.dev_info .dev_content h1 {
+    padding: 15px;
+    font-family: var(--principal_font);
+    /* color: rgb(57, 0, 131); */
+    font-size: 1.4em;
+
+}
+
+.dev_content {
+    text-align: center;
+}
+
+.dev_content p {
+    /* color: rgb(29, 4, 75); */
+    font-family: 'roboto';
+    letter-spacing: 1px;
+}
+
+/*social icones and elements*/
+
+.social_elements {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.social_icons li {
+    padding: 10px;
+    display: inline-block;
+
+}
+
+.social_icons li a {
+    padding: 7px;
+    box-shadow: 1px 3px 60px 22px var(--second_color);
+    font-size: 24px;
+    color: rgb(49, 9, 112);
+    text-align: center;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 40px;
+    align-items: center;
+}
+
+.social_icons li a:hover {
+    border: 1px solid var(--second_color);
+    transition: 1s ease-in-out;
+}
+
+/* create a download link*/
+.download_cv {
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.download_cv a {
+    margin-top: 50px;
+    font-family: var(--principal_font);
+    border: 2px solid var(--second_color);
+    padding: 12px;
+    color: var(--color_principal);
+    border-radius: 5px;
+
+}
+
+.download_cv a:hover {
+    background-color: var(--color_principal);
+    color: white;
+    transition: 1s background ease-in-out;
+}
+
+/* my picture, my face*/
+
+.me_picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.me_picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid blueviolet;
+    padding: 2px;
+    border: 1px solid blueviolet
+}
+
+
+.informatic_component {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 80px auto;
+    padding: 12px;
+}
+
+.informatic_component img {
+    height: 140px;
+    text-align: center;
+}
+
+/* Header end <----> */
+
+
+.full_estruture{
+background-color:  var(--second_color);
+height: 300px;
+width: 100%;
+}
+.full_estruture_content{
+    display: flex;
+    width: 80%;
+    background-color: white;
+    justify-content: center;
+}

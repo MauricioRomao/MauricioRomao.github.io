@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---- mesta description -->
+    <meta name="description" content="Hello, welcome to my protfolio">
+    <!-- cs link-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- imports boxicons-->
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+    <!-- imports roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--- icon -->
+    <link rel="shortcut icon" href="assets/img/logo/dev.svg" type="image/x-icon">
+
     <title>Maurício Romão</title>
-    
 </head>
+
 <body>
-    
+    <!--- Header =  dipslay flex -->
+    <header class="header bg">
+        <div class="header_logo">
+            <a href="main.html">
+
+                <span>
+                    <i class="bx bx-chevron-left"></i>Maurício Romão<i class="bx bx-chevron-right"></i>
+                </span>
+            </a>
+        </div>
+
+        <div class="modal_">
+            <i class="bx bxl-gmail modal_ modal"></i>
+        </div>
+    </header>
+
+    <!--- Modal pop_up-->
+    <section class="content_dialog">
+
+
+        <dialog class="dialog">
+            <div class="header_dialog">
+                <p> Say Hello <i class="bx bxl-messenger"></i></p>
+            </div>
+            <form action="https:/formsubmit.co/devmauroromao@gmail.com" method="post">
+                <div class="formone">
+                    <input type="text" name="name" required placeholder="Insert your name">
+                    <input type="email" name="email" placeholder="Insert your email" required>
+                    <div class="second form">
+                        <textarea name="message" cols="30" rows="10" required placeholder="Say anything ..."></textarea>
+
+                    </div>
+
+                </div>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5501/main.html">
+                <button type="submit">Send</button>
+
+            </form>
+            <div class="dialog_cancel">
+                <p> Cancel </p>
+            </div>
+        </dialog>
+
+
+    </section>
+
+<!---- modal end --->
+
+    <!--- nav end-->
+    <div class="download_cv">
+
+        <a download="Maurício Romão CV" href="assets/pdf/newpdf.pdf" class="link_dark">
+            Download CV
+        </a>
+    </div>
+    <article class="dev_info color_change">
+        <div class="dev_content ">
+
+            <h1>
+                Javascript Backend Developer
+            </h1>
+            <p>
+                " Different methods, same outcomes "
+            </p>
+        </div>
+    </article>
+
+    <!--- Navigator_ = social_icons-->
+    <nav class="nav social_elements ">
+
+        <div class="social_icons ">
+            <!-- whatsapp api intergration-->
+            <ul>
+
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=+244958953206&text=Hello, more information!"
+                        target="_blank">
+
+                        <i class="bx bxl-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/m4uro5_romao" target="_blank">
+                        <i class="bx bxl-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://facebook.com/mauricioromao.antonio?eav=Afatd4CiCi3TRnIgmMWJ8ia-N-Q-fuTeVPs6hEb8ocG-9Cfxjiqd9PwaIb4vLEB3-uk&ref_component=mfreebasic_home_header&ref_page=MNotificationsController&refid=48&paipv=0"
+                        target="_blank">
+
+
+                        <i class="bx bxl-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <!--- create download CV link-->
+
+
+    <article class="article me_picture">
+        <div class="my_face ">
+            <img src="assets/img/me/Mauricio Romão.jpg" alt="Maurício Romão">
+        </div>
+
+    </article>
+    <div class="informatic_component">
+        <img src="assets/img/more/hero-devices.svg" alt="eletronic devices">
+    </div>
+
+
+
+    <!-- start a lang_techs estruture-->
+
+ 
+
+
+
+
+
+    <!--------   Javascriipt LInk --->
+    <script src="assets/js/index.js"></script>
 </body>
+
 </html>
