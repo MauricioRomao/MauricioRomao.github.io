@@ -1,5 +1,30 @@
 
-/*  First modal, - sendme mail*/
+
+/* <!---  scroll top --> */
+
+
+window.onscroll =  ()=> {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    var scrollToTopBtn = document.querySelector('.scroll_controller');
+
+    if (document.body.scrollTop > 130 || document.documentElement.scrollTop > 130) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+}
+
+function scrollToTop() {
+    document.body.scrollTop = 0; // <!-- Para navegadores Safari -->
+    document.documentElement.scrollTop = 0; // <!--- Para outros navegadores -->
+}
+
+
+
+/* <!---  First modal, - sendme mail -->*/
 
 const modal = document.querySelector('.modal')
 const dialog = document.querySelector('dialog')
@@ -10,3 +35,5 @@ modal.onclick = function () {
 close.onclick = () => {
     dialog.close()
 }
+
+// sistema de lista aleatoria 

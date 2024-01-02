@@ -17,6 +17,10 @@ body {
     background-color: white;
     transition: 1s background ease-in-out;
     color: var(--color_principal);
+    scroll-behavior: smooth;
+    font-size: 1.3vw !important;
+
+
 }
 
 /* Vars*/
@@ -86,18 +90,18 @@ body {
 
 
 
-.modal_ i{
+.modal_ i {
 
     margin-right: 30px;
     font-size: 2rem;
     color: rgb(133, 15, 243);
-  
+
 }
 
 
 dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.9);
-  
+
 }
 
 .dialog {
@@ -117,7 +121,7 @@ dialog::backdrop {
 }
 
 .dialog form .formone {
-    
+
     margin-top: 0.8rem;
     display: flex;
     width: 100%;
@@ -137,7 +141,8 @@ dialog::backdrop {
 
 
 }
-.dialog form button{
+
+.dialog form button {
     padding: 10px;
     text-align: center;
     width: 100%;
@@ -147,12 +152,14 @@ dialog::backdrop {
     font-size: 1rem;
     font-family: 'roboto';
 }
-.dialog_cancel{
+
+.dialog_cancel {
     position: absolute;
     bottom: 0;
     right: 0;
     padding: 30px;
 }
+
 .dialog_cancel p {
     background-color: blueviolet;
     padding: 10px;
@@ -162,6 +169,7 @@ dialog::backdrop {
     cursor: pointer;
 
 }
+
 /* article config*/
 
 .dev_info {
@@ -284,14 +292,80 @@ dialog::backdrop {
 /* Header end <----> */
 
 
-.full_estruture{
-background-color:  var(--second_color);
-height: 300px;
-width: 100%;
+.full_estruture {
+    background-color: var(--second_color);
+    height: 300px;
+    width: 100%;
 }
-.full_estruture_content{
+
+.full_estruture_content {
     display: flex;
     width: 80%;
     background-color: white;
     justify-content: center;
+}
+
+/* <!------- scroll controller > */
+
+.scroll_controller {
+    font-size: 20px;
+    width: 30px;
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 1px 3px 60px 22px var(--second_color);
+    display: flex;
+    justify-content: center;
+}
+
+.scroll_controller.show {
+    opacity: 1;
+}
+
+.scroll_controller i {
+    font-size: 29px;
+    background-color: white;
+    padding: 10px;
+}
+
+/* <!------- discurse and techs > */
+
+
+
+
+
+
+
+
+/* <!------- dispositivos menore  --> */
+
+@media only screen and (max-width: 480px) {
+    .header .header_logo a {
+        font-size: 1.1em;
+    }
+
+    .dev_info .dev_content h1 {
+        font-size: 1em;
+    }
+
+    .social_icons li a {
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .download_cv a {
+        padding: 10px;
+    }
+
+    .me_picture img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .informatic_component img {
+        height: 100px;
+    }
 }
