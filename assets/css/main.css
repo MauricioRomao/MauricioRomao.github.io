@@ -345,13 +345,13 @@ dialog::backdrop {
 .main {
     background-color: var(--color_principal);
     width: 100%;
-    height: 500px;
+    height: 300px;
 }
 
 .main_discurse {
     background-color: var(--color_principal);
     width: 100%;
-    height: 350px;
+    height: 250px;
     margin: 0 auto;
 }
 
@@ -381,10 +381,10 @@ dialog::backdrop {
     width: 80%;
     margin: 0 auto;
     font-family: sans-serif;
-    padding: 10px;
     color: white;
     letter-spacing: 1px;
     font-size: 18px;
+
 }
 
 /* <!------- my techs  --> */
@@ -393,18 +393,18 @@ dialog::backdrop {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 140px;
+    margin: 30px auto;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+
 }
 
 .estruture {
-    width: 300px;
+    width: 350px;
     height: 350px;
-    background-color:white;
+    background-color: white;
     border-radius: 10px;
-    margin: 10px;
-    border-bottom: 2px solid var(--second_color);
+    margin: 10px auto;
+    box-shadow: 0 4px 1px var(--second_color);
 }
 
 .estruture_header {
@@ -489,7 +489,30 @@ dialog::backdrop {
         height: 100px;
     }
 
-    .lang_techs {
-        margin-top: 200px;
+    .main {
+        height: 450px;
     }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .db {
+        margin-right: 430px;
+
+    }
+
+
+
+}
+
+@media only screen and (max-width: 820px) {
+
+    .db {
+        margin-right: 440px;
+
+    }
+
+
+
 }
