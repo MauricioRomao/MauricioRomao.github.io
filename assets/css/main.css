@@ -18,7 +18,7 @@ body {
     transition: 1s background ease-in-out;
     color: var(--color_principal);
     scroll-behavior: smooth;
-    font-size: 1.3vw !important;
+
 
 
 }
@@ -110,6 +110,14 @@ dialog::backdrop {
     width: 500px;
     border-radius: 10px;
     border: 1px solid white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-shadow: 1px 3px 60px 12px rgba(0, 0, 0, 0.2);
+
+}
+
+.dialog.opacity {
+    opacity: 1;
 }
 
 .header_dialog {
@@ -312,10 +320,10 @@ dialog::backdrop {
     width: 30px;
     position: fixed;
     right: 30px;
+    padding: 10px;
     bottom: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    box-shadow: 1px 3px 60px 22px var(--second_color);
     display: flex;
     justify-content: center;
 }
@@ -325,21 +333,133 @@ dialog::backdrop {
 }
 
 .scroll_controller i {
+    box-shadow: 1px 3px 60px 22px var(--second_color);
     font-size: 29px;
     background-color: white;
+    border-radius: 10px;
     padding: 10px;
 }
 
 /* <!------- discurse and techs > */
 
+.main {
+    background-color: var(--color_principal);
+    width: 100%;
+    height: 500px;
+}
 
+.main_discurse {
+    background-color: var(--color_principal);
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+}
 
+.discurse_header {
+    width: 100%;
+    color: white;
+    padding: 6px;
+}
 
+.discurse_header h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 150%;
+    font-family: var(--principal_font);
 
+}
 
+.discurse_discurse {
+    margin: 30px auto;
+    width: 100%;
+    height: 100px;
 
+}
 
-/* <!------- dispositivos menore  --> */
+.discurse_discurse p {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 10px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+/* <!------- my techs  --> */
+
+.lang_techs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 140px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.estruture {
+    width: 300px;
+    height: 350px;
+    background-color:white;
+    border-radius: 10px;
+    margin: 10px;
+    border-bottom: 2px solid var(--second_color);
+}
+
+.estruture_header {
+    background-color: white;
+    height: 50px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.estruture_header i {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second_color);
+    color: rgb(35, 5, 85);
+    padding: 10px;
+}
+
+.estruture_title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: rgb(3, 3, 34);
+    font-size: 16px;
+    margin-top: 10px;
+    height: 50px;
+    font-family: 'roboto';
+}
+
+.estruture_title h3 {
+    margin-top: 20px;
+}
+
+.languages_p {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.languages_p p {
+    margin-top: 7px;
+    color: rgb(2, 4, 19);
+    font-size: 16px;
+}
+
+/* <!------- dispositivos menoreS  --> */
 
 @media only screen and (max-width: 480px) {
     .header .header_logo a {
@@ -367,5 +487,9 @@ dialog::backdrop {
 
     .informatic_component img {
         height: 100px;
+    }
+
+    .lang_techs {
+        margin-top: 200px;
     }
 }

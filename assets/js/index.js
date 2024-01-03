@@ -31,9 +31,13 @@ const dialog = document.querySelector('dialog')
 const close = document.querySelector('.dialog_cancel p')
 modal.onclick = function () {
     dialog.showModal()
+    dialog.classList.add('opacity')
 }
 close.onclick = () => {
     dialog.close()
+    dialog.classList.remove('opacity')
+
+
 }
 
 // sistema de lista aleatoria 
