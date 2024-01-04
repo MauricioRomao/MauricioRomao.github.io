@@ -112,7 +112,7 @@ dialog::backdrop {
     border: 1px solid white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    box-shadow: 1px 3px 60px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
 
 }
 
@@ -127,7 +127,10 @@ dialog::backdrop {
     justify-content: center;
     padding: 10px;
 }
-
+.Say i{
+    font-size: 29px ;
+    color: var(--color_principal);
+}
 .dialog form .formone {
 
     margin-top: 0.8rem;
@@ -145,7 +148,7 @@ dialog::backdrop {
     padding: 0.8rem;
     border-radius: 5px;
     margin-left: 1rem;
-    border: 1px solid var(--second_color);
+    border: 2px solid var(--second_color);
 
 
 }
@@ -156,10 +159,11 @@ dialog::backdrop {
     width: 100%;
     background-color: var(--second_color);
     border: 1px solid white;
-    color: white;
+    color: rgb(14, 6, 49);
     font-size: 1rem;
     font-family: 'roboto';
 }
+
 
 .dialog_cancel {
     position: absolute;
@@ -386,6 +390,18 @@ dialog::backdrop {
     font-size: 18px;
 
 }
+/* <!------- comenter  --> */
+
+.comenter{
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    color: rgb(9, 9, 44) !important;
+}
+.comenter h1{
+
+}
 
 /* <!------- my techs  --> */
 
@@ -495,24 +511,3 @@ dialog::backdrop {
 
 }
 
-@media only screen and (max-width: 768px) {
-
-    .db {
-        margin-right: 430px;
-
-    }
-
-
-
-}
-
-@media only screen and (max-width: 820px) {
-
-    .db {
-        margin-right: 440px;
-
-    }
-
-
-
-}

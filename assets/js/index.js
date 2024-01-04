@@ -40,4 +40,3 @@ close.onclick = () => {
 
 }
 
-// sistema de lista aleatoria 
