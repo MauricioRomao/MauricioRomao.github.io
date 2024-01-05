@@ -3,7 +3,7 @@
 /* <!---  scroll top --> */
 
 
-window.onscroll =  ()=> {
+window.onscroll = () => {
     scrollFunction();
 };
 

@@ -78,7 +78,10 @@
                 </div>
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5501/main.html">
-                <button type="submit">Send</button>
+                <div class="button">
+                    <button type="submit">Send</button>
+
+                </div>
 
             </form>
             <div class="dialog_cancel">
@@ -191,12 +194,15 @@
         </article>
     </main>
 
-<section class="comenter">
-    <h1>
-        🧠 My Toolbox
-    </h1>
+    <section class="comenter">
+        <h1>
+            🧠 My Toolbox
+        </h1>
+        <p>
+            Tech Lang
+        </p>
 
-</section>
+    </section>
 
 
     <section class="lang_techs">
@@ -212,6 +218,7 @@
                     Frontend Developer
 
                 </h3>
+
             </div>
             <div class="languages_p">
                 <p>
@@ -295,21 +302,67 @@
             </div>
         </div>
 
+    </section>
 
 
-
-
-
-
-
-
-
-
+    <section class="comenter">
+        <h1>
+            💻 My Recent works
+        </h1>
+        <p>
+            Projects
+        </p>
 
     </section>
 
+    <section id="product">
+        <div class="container_2">
+            <div class="controls">
+                <button type="button" class="control" data-filter="all">ALL</button>
+                <button type="button" class="control" data-filter=".air-force">
+                    Full
+                </button>
+                <button type="button" class="control" data-filter=".pegasus">
+                    Backend
+                </button>
+                <button type="button" class="control" data-filter=".tempo">
+                    Frontend
+                </button>
+            </div>
+            <div class="products">
+                <div class="mix air-force">
+                    <img src="images/shoe-1.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix pegasus">
+                    <img src="images/shoe-3.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix air-force">
+                    <img src="images/shoe-2.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-5.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-7.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix pegasus">
+                    <img src="images/shoe-4.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-6.jpeg" alt="Shoe" />
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--------   Javascriipt LInk --->
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js" defer></script>
+    <!----- MIXITUP link-->
+    <script src="assets/js/mixitup.min.js"></script>
+    <script defer>
+        var products = document.querySelector('.products');
+        var mixer = mixitup(products);
+    </script>
 </body>
 
 </html>
