@@ -26,7 +26,8 @@ body {
 /* Vars*/
 :root {
     --second_color: rgb(81, 228, 179);
-    --color_principal: rgb(46, 7, 119);
+    --color_principal: rgb(5, 5, 27);
+    --trethh_principal: rgba(66, 23, 223, 0.973);;
     --principal_font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* mixitup vars*/
     --container: 144rem;
@@ -193,12 +194,12 @@ dialog::backdrop {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    color: var(--trethh_principal);
 }
 
 .dev_info .dev_content h1 {
     padding: 15px;
     font-family: var(--principal_font);
-    /* color: rgb(57, 0, 131); */
     font-size: 1.4em;
 
 }
@@ -208,7 +209,7 @@ dialog::backdrop {
 }
 
 .dev_content p {
-    /* color: rgb(29, 4, 75); */
+     color: rgb(29, 4, 75); 
     font-family: 'roboto';
     letter-spacing: 1px;
 }
@@ -355,6 +356,9 @@ dialog::backdrop {
     width: 100%;
     height: 300px;
 }
+.main_second{
+background-color: var(--color_principal);
+}
 
 .main_discurse {
     background-color: var(--color_principal);
@@ -386,7 +390,7 @@ dialog::backdrop {
 
 .discurse_discurse p {
     text-align: center;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     font-family: sans-serif;
     color: white;
@@ -426,7 +430,7 @@ dialog::backdrop {
     background-color: white;
     border-radius: 10px;
     margin: 10px auto;
-    border-bottom: 2px solid var(--color_principal);
+    border-bottom: 4px solid rgb(179, 97, 255);
     padding: 10px;
 }
 
@@ -473,7 +477,7 @@ dialog::backdrop {
     width: 100%;
     text-align: center;
     margin-top: 30px;
-
+    
 }
 
 .languages_p p {
@@ -513,30 +517,48 @@ dialog::backdrop {
     border-radius: 5px;
     width: 100px;
     font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 
 .control.mixitup-control-active {
-    background: var(--color_principal);
+    background: rgb(92, 23, 156);
 }
 
 .products {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    width: auto;
+    gap: 2rem;
+    height: auto;
+    margin: 0 auto;
 }
 
 .mix {
-    max-width: 37rem;
+
 }
 
 .mix img {
-    width: 100%;
+    height: 209px;
+    border-radius: 20px;
 }
 
 /* <!------- dispositivos menoreS  --> */
+@media only screen and (max-width: 280px) {
+
+    .products{
+        margin-right: -20px;
+    }
+    .mix img{
+        height:  200px;
+    }
+    .discurse_header_second{
+        font-size: 15px;
+        
+    }
+}
 
 @media only screen and (max-width: 480px) {
     .header .header_logo a {
@@ -575,5 +597,8 @@ dialog::backdrop {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.estruture{
+    width: 300px;
 }
 }

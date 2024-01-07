@@ -39,4 +39,3 @@ close.onclick = () => {
 
 
 }
-
