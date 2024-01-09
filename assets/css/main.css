@@ -14,7 +14,7 @@
 html,
 body {
     font-family: sans-serif;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: 1s background ease-in-out;
     color: var(--color_principal);
     scroll-behavior: smooth;
@@ -27,7 +27,8 @@ body {
 :root {
     --second_color: rgb(81, 228, 179);
     --color_principal: rgb(5, 5, 27);
-    --trethh_principal: rgba(66, 23, 223, 0.973);;
+    --trethh_principal: rgba(66, 23, 223, 0.973);
+    ;
     --principal_font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* mixitup vars*/
     --container: 144rem;
@@ -96,8 +97,12 @@ body {
 
 
 dialog::backdrop {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(153, 243, 255, 0.9);
 
+}
+
+.mail_input {
+    border: 1px solid var(--second_color);
 }
 
 .dialog {
@@ -209,7 +214,7 @@ dialog::backdrop {
 }
 
 .dev_content p {
-     color: rgb(29, 4, 75); 
+    color: rgb(29, 4, 75);
     font-family: 'roboto';
     letter-spacing: 1px;
 }
@@ -250,28 +255,50 @@ dialog::backdrop {
 }
 
 /* create a download link*/
-.download_cv {
-    width: 100%;
-    height: 45px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
 .download_cv a {
     margin-top: 50px;
     font-family: var(--principal_font);
     border: 2px solid var(--second_color);
     padding: 12px;
     color: var(--color_principal);
-    border-radius: 5px;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+
 
 }
 
+.download_cv a::before,
+.download_cv a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, var(--second_color), transparent);
+    transition: width 0.5s ease;
+}
+
+.download_cv a::before {
+    left: 0;
+    transition-delay: 0.25s;
+}
+
+.download_cv a::after {
+    right: 0;
+}
+
 .download_cv a:hover {
-    background-color: var(--color_principal);
-    color: white;
-    transition: 1s background ease-in-out;
+    color: var(--color_principal);
+}
+
+.download_cv a:hover::before,
+.download_cv a:hover::after {
+    width: 100%;
+}
+
+.download_cv {
+    text-align: center;
 }
 
 /* my picture, my face*/
@@ -284,9 +311,8 @@ dialog::backdrop {
 }
 
 .me_picture img {
-    width: 200px;
     height: 200px;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 1px solid blueviolet;
     padding: 2px;
     border: 1px solid blueviolet
@@ -354,10 +380,11 @@ dialog::backdrop {
 .main {
     background-color: var(--color_principal);
     width: 100%;
-    height: 300px;
+    height: 590px;
 }
-.main_second{
-background-color: var(--color_principal);
+
+.main_second {
+    background-color: var(--color_principal);
 }
 
 .main_discurse {
@@ -381,21 +408,72 @@ background-color: var(--color_principal);
 
 }
 
-.discurse_discurse {
-    margin: 30px auto;
+.about {
     width: 100%;
-    height: 100px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.about1 img {
+    height: 415px;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-left: 70px;
 
 }
 
-.discurse_discurse p {
-    text-align: center;
-    width: 90%;
+.about2 {
+    width: 370px;
+    height: 100%;
+
+}
+.about_controller{
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
-    font-family: sans-serif;
+}
+
+.about_header {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+.about_header_boxs{
+    display: flex;
+    margin: 0 auto;
+}
+.about_box{
+    width: 100px;
+    height: 90px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'roboto';
     color: white;
-    letter-spacing: 1px;
-    font-size: 17px;
+    
+}
+.about_discurse{
+    height: 300px;
+    margin: -30px  auto;
+    width: 100%;
+    display: flex;
+}
+.discurse_p{
+    padding: 15px;
+    width: 100%; 
+    color: white;
+    font-size: 18px;
+    letter-spacing: -1 ;
+  
 
 }
 
@@ -425,13 +503,15 @@ background-color: var(--color_principal);
 }
 
 .estruture {
-    width: 330px;
-    height: 350px;
+    width: 340px;
+    height: 330px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     background-color: white;
-    border-radius: 10px;
     margin: 10px auto;
-    border-bottom: 4px solid rgb(179, 97, 255);
+    border: 2px solid var(--second_color);
+    border-radius: 10px;
     padding: 10px;
+    text-align: start;
 }
 
 .estruture_header {
@@ -454,7 +534,7 @@ background-color: var(--color_principal);
     align-items: center;
     justify-content: center;
     background-color: var(--second_color);
-    color:rgb(5, 5, 27);
+    color: rgb(5, 5, 27);
     padding: 10px;
 }
 
@@ -477,7 +557,7 @@ background-color: var(--color_principal);
     width: 100%;
     text-align: center;
     margin-top: 30px;
-    
+
 }
 
 .languages_p p {
@@ -521,9 +601,7 @@ background-color: var(--color_principal);
 
 }
 
-.control.mixitup-control-active {
-    background: rgb(92, 23, 156);
-}
+.control.mixitup-control-active {}
 
 .products {
     display: flex;
@@ -536,27 +614,115 @@ background-color: var(--color_principal);
     margin: 0 auto;
 }
 
-.mix {
-
-}
+.mix {}
 
 .mix img {
-    height: 209px;
-    border-radius: 20px;
+    height: 220px;
+
 }
+
+.main_second {
+    height: 520px;
+}
+
+.second_main {
+
+    margin: 20px auto;
+    width: 60%;
+}
+
+.second_main_content {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+}
+
+.second_main_content input {
+    width: 350px;
+    padding: 10px;
+    font-family: 'roboto';
+    font-size: var(--principal_font);
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 6px;
+    color: wheat;
+    outline: none;
+    border: 1px solid var(--second_color);
+    padding: 14px;
+}
+
+.second_main_content textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: 'roboto';
+    font-size: 17px;
+    width: 100%;
+    margin-top: 20px;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: 1px solid var(--second_color);
+
+}
+
+.second_main_content .buttonn {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.buttonn button {
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    border: 1px solid var(--second_color);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonn button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(to right, var(--second_color), transparent);
+    transition: width 0.5s ease;
+}
+
+.buttonn button:hover::before {
+    width: 100%;
+    cursor: pointer;
+}
+
+.goo {
+    width: 00px;
+    color: red;
+
+}
+
+
 
 /* <!------- dispositivos menoreS  --> */
 @media only screen and (max-width: 280px) {
 
-    .products{
+    .products {
         margin-right: -20px;
     }
-    .mix img{
-        height:  200px;
+
+    .mix img {
+        height: 200px;
     }
-    .discurse_header_second{
+
+    .discurse_header_second {
         font-size: 15px;
-        
+
     }
 }
 
@@ -589,16 +755,35 @@ background-color: var(--color_principal);
     }
 
     .main {
-        height: 450px;
+        height: 980px;
     }
-.control{
-    font-size: 15px;
-    width: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.estruture{
-    width: 300px;
-}
+    .about1 img{
+        height: 340px;
+    }
+
+    .control {
+        font-size: 15px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .estruture {
+        width: 300px;
+        height: 400px;
+    }
+    .second_main_content textarea{
+        width: 90%;
+    }
+
+    .main_second {
+        height: 555px;
+    }
+    .discurse_p{
+            text-align: center;
+    }
+    .about1 img{
+        margin-left: auto;
+    }
 }

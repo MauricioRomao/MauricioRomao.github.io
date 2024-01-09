@@ -29,7 +29,7 @@ function scrollToTop() {
 const modal = document.querySelector('.modal')
 const dialog = document.querySelector('dialog')
 const close = document.querySelector('.dialog_cancel p')
-modal.onclick = function () {
+ modal.onclick = function () {
     dialog.showModal()
     dialog.classList.add('opacity')
 }
@@ -39,3 +39,4 @@ close.onclick = () => {
 
 
 }
+
