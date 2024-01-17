@@ -590,10 +590,14 @@ dialog::backdrop {
     margin: 0 auto;
 }
 
-.mix {}
+.mix {
+}
 
 .mix img {
     height: 220px;
+    border: 2px solid rgb(102, 65, 224);
+    border-radius: 10px;
+    padding: 5px;
 
 }
 
@@ -638,6 +642,7 @@ dialog::backdrop {
     outline: none;
     font-family: 'roboto';
     font-size: 16px;
+    color: white;
 }
 
 .second_main_content .buttonn {
