@@ -403,17 +403,27 @@ dialog::backdrop {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
+
 .discurse_box div {
-    width: 90px;
-    height: 80px;
+    width: 150px;
+    height: 100px;
     margin-left: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    color: white;
 
 }
 
+.discurse_box div i {
+    font-size: 22px;
+    margin-top: 5px;
+}
+.discurse_box div h3 {
+    font-size: 17px;
+}
 .discurse_content {
     width: 90%;
     margin: 30px auto;
@@ -540,6 +550,10 @@ dialog::backdrop {
     font-size: 16px;
 }
 
+.estruture_comenter {
+    position: absolute;
+    bottom: 0;
+}
 
 /* <!------- Mixitup LIb --> */
 
@@ -590,14 +604,13 @@ dialog::backdrop {
     margin: 0 auto;
 }
 
-.mix {
-}
+.mix {}
 
 .mix img {
-    height: 220px;
+    height: 240px;
     border: 2px solid rgb(102, 65, 224);
-    border-radius: 10px;
     padding: 5px;
+    border-radius: 20px;
 
 }
 
