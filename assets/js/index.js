@@ -39,4 +39,13 @@ close.onclick = () => {
 
 
 }
+/* <!------ principal modal */
+
+    function openModal(modalNumber) {
+        
+        document.getElementById(`myModal${modalNumber}`).style.display = 'block';
+    }
+  
+  function closeModal(modalNumber) {
+    document.getElementById(`myModal${modalNumber}`).style.display = 'none';}
 
