@@ -415,7 +415,7 @@ dialog::backdrop {
     color: white;
     border: 1px solid white;
     padding: 10px;
-
+    
 }
 
 .discurse_box div i {
@@ -441,7 +441,10 @@ dialog::backdrop {
     align-items: center;
     color: white;
     margin-top: 20px;
-
+    
+}
+.discurse_text{
+    margin-top: 40px !important;
 }
 
 
@@ -449,7 +452,7 @@ dialog::backdrop {
 
 .comenter {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 26px;
     padding: 10px;
     text-align: center;
     color: rgb(9, 9, 44) !important;
