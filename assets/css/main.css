@@ -415,7 +415,7 @@ dialog::backdrop {
     color: white;
     border: 1px solid white;
     padding: 10px;
-    
+
 }
 
 .discurse_box div i {
@@ -441,9 +441,10 @@ dialog::backdrop {
     align-items: center;
     color: white;
     margin-top: 20px;
-    
+
 }
-.discurse_text{
+
+.discurse_text {
     margin-top: 40px !important;
 }
 
@@ -457,6 +458,9 @@ dialog::backdrop {
     text-align: center;
     color: rgb(9, 9, 44) !important;
 }
+
+
+
 
 .comenter h1 {
     padding: 5px;
@@ -611,6 +615,7 @@ dialog::backdrop {
 }
 
 .mix {
+    flex-direction: row-reverse;
     position: relative;
     margin: 20px;
     cursor: pointer;
@@ -637,8 +642,9 @@ dialog::backdrop {
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .info-projeto h3 {
-  
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -754,15 +760,16 @@ dialog::backdrop {
 }
 
 /*   <!--- services ---> */
-.services h3{
+.services h3 {
     padding: 10px;
     font-family: 'roboto';
     margin-top: 10px;
 }
-.services a{
-  margin: 3000px 10px !important;
- color: rgba(66, 23, 223, 0.973);
- padding-top: 10px;
+
+.services a {
+    margin: 3000px 10px !important;
+    color: rgba(66, 23, 223, 0.973);
+    padding-top: 10px;
 }
 
 
@@ -773,10 +780,10 @@ dialog::backdrop {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
-  }
-  
-  .modall-content {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modall-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -785,37 +792,41 @@ dialog::backdrop {
     padding: 20px;
     text-align: center;
     width: 400px;
-    height: 50%;
-    border-radius: 10px;   
-    animation: fadeIn 0.3s ease; 
-  }
-  @keyframes fadeIn {
+    height: 360px;
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
-  .modall-content h2{
+
+.modall-content h2 {
     color: rgba(66, 23, 223, 0.973);
     padding-bottom: 40px;
     font-family: var(--principal_font);
-  }
-  .modall-content p{
+}
+
+.modall-content p {
     color: rgb(14, 6, 49);
     margin-top: 20px;
     font-family: 'roboto';
     text-align: start;
-  }
-  
-  .close {
+}
+
+.close {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-  }
+}
 
 .status_content {
     width: 100%;
@@ -880,10 +891,10 @@ dialog::backdrop {
     text-align: center;
     width: 100%;
     font-size: 29px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
-.more_box h4{
+.more_box h4 {
     font-size: 14px;
     width: 100%;
     text-align: center;
@@ -892,11 +903,13 @@ dialog::backdrop {
     color: rgb(14, 6, 49);
     font-family: 'roboto';
 }
- .more_box a{
-  color: rgba(66, 23, 223, 0.973);
-  margin:  0 80px;
+
+.more_box a {
+    color: rgba(66, 23, 223, 0.973);
+    margin: 0 80px;
 
 }
+
 /* <!---  footer --->*/
 
 .footer {
@@ -937,107 +950,112 @@ dialog::backdrop {
 
 @media only screen and (max-width: 820px) {
     .client {
-        
+
         width: 190px !important;
-        height: 100px !important; 
-        
-    }
-}
-
-/* <!------- dispositivos menoreS  --> */
-@media only screen and (max-width: 280px) {
-
-    .products {
-        margin-right: -20px;
-    }
-
-    .mix img {
-        height: 200px;
-    }
-
-    .discurse_header_second {
-        font-size: 15px;
+        height: 100px !important;
 
     }
- 
-}
 
-@media only screen and (max-width: 480px) {
-    .header .header_logo a {
-        font-size: 1.1em;
-    }
 
-    .dev_info .dev_content h1 {
-        font-size: 1em;
-    }
+    /* <!------- dispositivos menoreS  --> */
+    @media only screen and (max-width: 280px) {
 
-    .social_icons li a {
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
-    }
+        .products {
+            margin-right: -20px;
+        }
 
-    .download_cv a {
-        padding: 10px;
-    }
+        .mix img {
+            height: 200px;
+        }
 
-    .me_picture img {
-        width: 120px;
-        height: 120px;
-    }
+        .discurse_header_second {
+            font-size: 15px;
 
-    .informatic_component img {
-        height: 100px;
-    }
-    .more_box a{
-        color: rgba(66, 23, 223, 0.973);
-        margin:  0  40px;
-      
-      }
-
-    /* <!------ start main config ----> */
-
-    .main,
-    .about_me {
-        height: 580px;
-    }
-    .modall-content {
-        width: 300px;
-        
-    }
-    .estruture {
-        width: 300px;
-        height: 400px;
-    }
-
-    .second_main_content textarea {
-        width: 90%;
-    }
-
-    .main_second {
-        height: 555px;
-        margin-top: -0,3px !important;
-    }
-
-    .more_box {
-        width: 170px;
-        height: 150px;
-        margin: 05px;
-    
+        }
 
     }
-    .client {
-        
-        width: 170px !important;
-        height: 100px !important;   
+
+    @media only screen and (max-width: 480px) {
+        .header .header_logo a {
+            font-size: 1.1em;
+        }
+
+        .dev_info .dev_content h1 {
+            font-size: 1em;
+        }
+
+        .social_icons li a {
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .download_cv a {
+            padding: 10px;
+        }
+
+        .me_picture img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .informatic_component img {
+            height: 100px;
+        }
+
+        .more_box a {
+            color: rgba(66, 23, 223, 0.973);
+            margin: 0 40px;
+
+        }
+
+        /* <!------ start main config ----> */
+
+        .main,
+        .about_me {
+            height: 580px;
+        }
+
+        .modall-content {
+            width: 300px;
+
+        }
+
+        .estruture {
+            width: 300px;
+            height: 400px;
+        }
+
+        .second_main_content textarea {
+            width: 90%;
+        }
+
+        .main_second {
+            height: 555px;
+            margin-top: -0, 3px !important;
+        }
+
+        .more_box {
+            width: 170px;
+            height: 150px;
+            margin: 05px;
+
+
+        }
+
+        .client {
+
+            width: 170px !important;
+            height: 100px !important;
+        }
+
+        .estruture {
+            height: 300px;
+
+        }
+
+        .more_box h4 {
+            font-size: 13px;
+
+        }
     }
-    .estruture{
-        height: 300px;
-        
-    }
-    
-    .more_box h4{
-        font-size: 13px;
-     
-    }
-}
