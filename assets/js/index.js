@@ -48,4 +48,3 @@ close.onclick = () => {
   
   function closeModal(modalNumber) {
     document.getElementById(`myModal${modalNumber}`).style.display = 'none';}
-
