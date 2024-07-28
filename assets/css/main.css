@@ -99,23 +99,22 @@ body {
 
 
 dialog::backdrop {
-    background-color: rgba(153, 243, 255, 0.9);
+    
+    background: linear-gradient(45deg, blueviolet, rgb(81, 228, 179));
 
 }
 
-.mail_input {
-    border: 1px solid var(--second_color);
-}
+
 
 .dialog {
     margin: auto auto;
     height: 500px;
-    width: 500px;
+    width: 900px;
     border-radius: 10px;
-    border: 1px solid white;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    border: none;
+    outline: none;
 }
 
 .dialog.opacity {
@@ -130,69 +129,7 @@ dialog::backdrop {
     padding: 10px;
 }
 
-.Say i {
-    font-size: 29px;
-    color: var(--color_principal);
-}
 
-.dialog form .formone {
-
-    margin-top: 0.8rem;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.dialog form input,
-.dialog form textarea {
-    font-family: var(--principal_font);
-    margin-bottom: 1rem;
-    outline: none;
-    padding: 0.8rem;
-    border-radius: 5px;
-    margin-left: 1rem;
-    border: 2px solid var(--second_color);
-
-
-}
-
-.button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.dialog form button {
-    padding: 10px;
-    text-align: center;
-    width: 150px;
-    background-color: var(--second_color);
-    border: 1px solid white;
-    color: rgb(14, 6, 49);
-    font-size: 1rem;
-    font-family: 'roboto';
-}
-
-
-.dialog_cancel {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 30px;
-}
-
-.dialog_cancel p {
-    background-color: blueviolet;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    color: white;
-    cursor: pointer;
-
-}
 
 /* article config*/
 
