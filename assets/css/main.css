@@ -20,6 +20,7 @@ body {
     transition: 1s background ease-in-out;
     color: var(--color_principal);
     scroll-behavior: smooth;
+    overflow-x: hidden;
  
     
 
