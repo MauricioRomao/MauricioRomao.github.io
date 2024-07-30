@@ -432,7 +432,7 @@ dialog::backdrop {
 }
 .comenter_3{
 
-    margin-top: 50px !important;
+    margin-top: 30px !important;
 }
 /* <!------- my techs  --> */
 
@@ -924,12 +924,15 @@ dialog::backdrop {
         margin-top: 50px !important;
     }
 
-
     /* <!------- dispositivos menoreS  --> */
     @media only screen and (max-width: 280px) {
 
         .products {
             margin-right: -20px;
+        }
+        .comenter_3{
+
+            margin-top: 50px !important;
         }
 
         .mix img {
@@ -940,16 +943,15 @@ dialog::backdrop {
             font-size: 15px;
 
         }
+        .comenter_3{
+
+            margin-top: 50px !important;
 
     }
 
     @media only screen and (max-width: 480px) {
         .header .header_logo a {
             font-size: 1.1em;
-        }
-        .comenter_3{
-
-            margin-top: 50px !important;
         }
 
         .dev_info .dev_content h1 {
