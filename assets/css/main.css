@@ -919,6 +919,10 @@ dialog::backdrop {
         height: 100px !important;
 
     }
+    .comenter_3{
+
+        margin-top: 50px !important;
+    }
 
 
     /* <!------- dispositivos menoreS  --> */
@@ -942,6 +946,10 @@ dialog::backdrop {
     @media only screen and (max-width: 480px) {
         .header .header_logo a {
             font-size: 1.1em;
+        }
+        .comenter_3{
+
+            margin-top: 50px !important;
         }
 
         .dev_info .dev_content h1 {
