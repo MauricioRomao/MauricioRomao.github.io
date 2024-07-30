@@ -28,7 +28,7 @@ function scrollToTop() {
 
 const modal = document.querySelector('.modal')
 const dialog = document.querySelector('dialog')
-const close = document.querySelector('.dialog_cancel p')
+const close = document.querySelector('.dialog_cancel')
  modal.onclick = function () {
     dialog.showModal()
     dialog.classList.add('opacity')
@@ -48,3 +48,5 @@ close.onclick = () => {
   
   function closeModal(modalNumber) {
     document.getElementById(`myModal${modalNumber}`).style.display = 'none';}
+
+    

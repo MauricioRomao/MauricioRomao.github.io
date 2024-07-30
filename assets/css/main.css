@@ -20,6 +20,8 @@ body {
     transition: 1s background ease-in-out;
     color: var(--color_principal);
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    
 
 
 
@@ -88,11 +90,13 @@ body {
 }
 
 
+
 .modal_ i {
 
     margin-right: 30px;
     font-size: 2rem;
     color: rgb(133, 15, 243);
+    cursor: pointer;
 
 
 }
@@ -115,20 +119,33 @@ dialog::backdrop {
     transition: opacity 0.3s ease-in-out;
     border: none;
     outline: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;font-size: 20px;
+    color: var(--principal_font);
+    flex-direction: column;
+    font-family: "Roboto";
 }
 
+.follow{
+    margin-top: 25px;
+    color:var(--trethh_principal);
+    font-family: "Exo";
+}
+.dialog img{
+    border: 100%;
+    height: 100px   ;
+}
 .dialog.opacity {
     opacity: 1;
 }
 
-.header_dialog {
-    width: 100%;
-    font-family: 'roboto';
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+.dialog_cancel{
+    cursor: pointer;
+    margin-top: 10px;
+    padding-top: 10px;
 }
-
 
 
 /* article config*/
