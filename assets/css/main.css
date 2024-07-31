@@ -938,10 +938,7 @@ dialog::backdrop {
             font-size: 15px;
 
         }
-        .comenter_3{
-
-            margin-bottom: 10px !important;
-        }
+        
        }
 
     @media only screen and (max-width: 480px) {
@@ -958,10 +955,7 @@ dialog::backdrop {
             width: 30px;
             height: 30px;
         }
-        .comenter_3{
-
-            margin-bottom: 10px !important;
-        }
+       
 
         .download_cv a {
             padding: 10px;
@@ -971,10 +965,7 @@ dialog::backdrop {
             width: 120px;
             height: 120px;
         }
-        .comenter_3{
-
-            margin-bottom: 10px !important;
-        }
+      
         .informatic_component img {
             height: 100px;
         }
